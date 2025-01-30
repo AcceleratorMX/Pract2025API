@@ -4,7 +4,6 @@
 .env
 .env.dev
 .env.test
-composer.lock
 package-lock.json
 
 /node_modules/
