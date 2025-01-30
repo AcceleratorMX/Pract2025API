@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Http\Attribute\IsGranted;
 
 #[Route('api')]
 class TestController extends AbstractController
@@ -37,6 +38,7 @@ class TestController extends AbstractController
     }
 
     #[Route('/users', name: 'add_user', methods: ['POST'])]
+    #[IsGranted('ROLE_ADMIN')]
     public function addUser(Request $request): JsonResponse
     {
         $data = json_decode($request->getContent(), true);
