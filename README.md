@@ -2,6 +2,23 @@
 
 This project provides an API to manage users.
 
+## Requirements
+To run this project, you need to have Symfony 7 or higher installed.
+
+## Setup
+
+1. **Clone this repository;**
+2. **Start the Symfony server: To start the server locally, run the following command:**
+```
+symfony server:start
+```
+The server will be running at http://localhost:8000.
+
+**To stop the Symfony server, you can run:**
+```
+symfony server:stop
+```
+or **_CTRL+C_**.
 ## API Endpoints
 - **GET /api/users** - Get all users
 - **GET /api/users/{id}** - Get a user by ID
