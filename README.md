@@ -14,7 +14,7 @@ composer update
 ```
 3. **Generate ***SSL-keys*** with a command:**
 ```
-php composer.phar require "lexik/jwt-authentication-bundle"
+php bin/console lexik:jwt:generate-keypair
 ```
 4. **Start the ***Symfony*** server:**
 
